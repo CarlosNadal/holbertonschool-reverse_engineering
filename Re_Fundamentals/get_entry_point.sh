@@ -23,7 +23,7 @@ fi
 # Extract ELF header information
 magic_number=$(readelf -h "$file_name" | grep "Magic:" | awk '{for(i=2; i<=NF; i++) printf "%s ", $i; print ""}')
 class=$(readelf -h "$file_name" | grep "Class:" | awk '{print $2, $3}')
-byte_order=$(readelf -h "$file_name" | grep "Data:" | awk '{print $2, $3}')
+byte_order=$(readelf -h "$file_name" | grep "Data:" | awk '{print $4, $5}')
 entry_point_address=$(readelf -h "$file_name" | grep "Entry point address:" | awk '{print $4}')
 
 # Source the messages.sh script (ensure it's in the same directory)
