@@ -9,7 +9,8 @@ The script accepts the ELF file name as a command-line argument, checks for the 
 
 The script aims to make it easy to analyze ELF files and understand key attributes necessary for reverse engineering and security analysis.
 
-### 2 Enumerating sections in reverse engineering helps identify the structure of a binary. Key sections like `.text` (code), `.data` (initialized data), and `.bss` (uninitialized data) provide insights into the program's layout. It allows detection of custom or suspicious sections, such as `.hbtn-custom`, which may store hidden data or payloads. This process aids in analyzing the binary’s behavior, identifying vulnerabilities, and understanding its dependencies on external libraries. It also helps with debugging, patching, and ensuring compatibility.
+### 2 Enumerating sections 
+In reverse engineering helps identify the structure of a binary. Key sections like `.text` (code), `.data` (initialized data), and `.bss` (uninitialized data) provide insights into the program's layout. It allows detection of custom or suspicious sections, such as `.hbtn-custom`, which may store hidden data or payloads. This process aids in analyzing the binary’s behavior, identifying vulnerabilities, and understanding its dependencies on external libraries. It also helps with debugging, patching, and ensuring compatibility.
 
 ### 3. The information about the external libraries required by a binary is incredibly useful for several reasons, especially in the context of analyzing and working with binaries:
  **Reverse Engineering and Malware Analysis**
